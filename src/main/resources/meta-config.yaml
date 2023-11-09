@@ -1,0 +1,10 @@
+sources:
+    - type: "environment-variables"
+    - type: "system-properties"
+    - type: "file"
+      properties:
+          path: "config/battery.properties"
+          optional: false
+    - type: "classpath"
+      properties:
+          resource: "META-INF/microprofile-config.properties"
